@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
@@ -11,6 +11,7 @@ import { getItemsState } from '../../store/selectors/item.selector';
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
   styleUrls: ['./item-detail.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ItemDetailComponent implements OnInit, OnDestroy {
 
