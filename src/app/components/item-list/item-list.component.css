@@ -1,0 +1,8 @@
+.title{
+    text-align:center;
+}
+
+.pagination-bar {
+    display: flex;
+    justify-content: center;
+}
